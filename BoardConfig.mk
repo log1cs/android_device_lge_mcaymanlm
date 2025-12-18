@@ -70,6 +70,9 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 # SEPolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
+# Vendor security patch level
+VENDOR_SECURITY_PATCH := 2022-03-05
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_ALGORITHM := SHA256_RSA2048
