@@ -37,6 +37,7 @@ TARGET_BOOTLOADER_BOARD_NAME := mcaymanlm
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
+BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := lineageos_mcaymanlm_defconfig
 
 # Metadata
