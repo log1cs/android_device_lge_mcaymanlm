@@ -1,0 +1,12 @@
+## All proprietary firmware from this list, unless pinned and noted otherwise,
+## are from G900TM30g (SKQ1.211103.001).
+
+gz.img;AB
+lk.img;AB
+logo.img;AB
+md1img.img;AB
+preloader.img;AB
+scp.img;AB
+spmfw.img;AB
+sspm.img;AB
+tee.img;AB
