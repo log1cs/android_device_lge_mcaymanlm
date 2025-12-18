@@ -67,6 +67,9 @@ TARGET_BOARD_PLATFORM := mt6885
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
 
+# SEPolicy
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_ALGORITHM := SHA256_RSA2048
