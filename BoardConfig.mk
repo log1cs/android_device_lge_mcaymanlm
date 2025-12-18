@@ -5,6 +5,18 @@
 
 DEVICE_PATH := device/lge/mcaymanlm
 
+# A/B
+AB_OTA_PARTITIONS := \
+    boot \
+    dtbo \
+    system \
+    system_ext \
+    product \
+    vendor \
+    vbmeta \
+    vbmeta_system \
+    vbmeta_vendor
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -24,9 +36,33 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 TARGET_BOOTLOADER_BOARD_NAME := mcaymanlm
 TARGET_NO_BOOTLOADER := true
 
+# Kernel
+TARGET_KERNEL_CONFIG := lineageos_mcaymanlm_defconfig
+
+# Metadata
+BOARD_USES_METADATA_PARTITION := true
+
+# Partitions
+BOARD_PRODUCTIMAGE_MINIMAL_PARTITION_RESERVED_SIZE := false
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608
+BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_LGE_DYNAMIC_PARTITIONS_PARTITION_LIST := product system system_ext vendor
+BOARD_LGE_DYNAMIC_PARTITIONS_SIZE := 6673924096
+BOARD_SUPER_PARTITION_GROUPS := lge_dynamic_partitions
+BOARD_SUPER_PARTITION_SIZE := 13347848192
+BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
+TARGET_COPY_OUT_PRODUCT := product
+TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+TARGET_COPY_OUT_VENDOR := vendor
+
 # Platform
 BOARD_HAS_MTK_HARDWARE := true
 TARGET_BOARD_PLATFORM := mt6885
 
-# Kernel
-TARGET_KERNEL_CONFIG := lineageos_mcaymanlm_defconfig
+# Recovery
+BOARD_USES_RECOVERY_AS_BOOT := true
