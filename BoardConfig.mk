@@ -70,6 +70,9 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 # SEPolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2022-03-05
 
