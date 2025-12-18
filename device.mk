@@ -44,3 +44,6 @@ PRODUCT_PACKAGES += \
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Get non-open-source specific aspects
+$(call inherit-product, vendor/lge/mcaymanlm/mcaymanlm-vendor.mk)

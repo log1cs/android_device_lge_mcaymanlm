@@ -66,3 +66,6 @@ TARGET_BOARD_PLATFORM := mt6885
 
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
+
+# Inherit from the proprietary version
+include vendor/lge/mcaymanlm/BoardConfigVendor.mk
