@@ -1,65 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
-    Input:
-        manifest_sensor_hidl_v2.xml
-        manifest_audio.xml
-        manifest_tc1_dsds.xml
-        manifest_radioconfig.xml
-        manifest_hdcpconnection.xml
-        manifest_secure_element_dsds.xml
-        manifest_km41.xml
-        manifest_tee.xml
-        manifest_trustonic.xml
-        manifest_log.xml
-        manifest_mdmonitor.xml
-        manifest_aee.xml
-        manifest_boot.xml
-        manifest_netdagent.xml
-        manifest_tetheroffloadservice.xml
-        manifest_pq.xml
-        manifest_mmservice.xml
-        manifest_dmc.xml
-        manifest_apmonitor.xml
-        manifest_composer.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        manifest_target_level_q.xml
-        manifest.xml
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <manifest version="4.0" type="device" target-level="4">
     <hal format="hidl">
@@ -943,7 +885,4 @@
         </interface>
         <fqname>@1.0::ITui/default</fqname>
     </hal>
-    <sepolicy>
-        <version>31.0</version>
-    </sepolicy>
 </manifest>
