@@ -1,6 +1,9 @@
 # Audio
 persist.vendor.lge.audio.aux_attn=6
 
+# Bluetooth
+bluetooth.device.default_name=VELVET
+
 # Camera
 ro.vendor.lge.aux.camera=1
 
