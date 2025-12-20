@@ -1,3 +1,9 @@
+# Audio
+persist.vendor.lge.audio.aux_attn=6
+
+# Camera
+ro.vendor.lge.aux.camera=1
+
 # Connsys
 persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.patch.version=-1
@@ -15,6 +21,12 @@ ro.vendor.mtk_config_max_dram_size=0x180000000
 ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
 vendor.mtk.vdec.waitkeyframeforplay=9
+
+# LGE
+ro.vendor.lge.build.target_country=COM
+ro.vendor.lge.build.target_operator=LAO
+ro.vendor.lge.capp_cupss.rootdir=/product
+ro.vendor.lge.swversion=G900TM30g
 
 # Wi-Fi
 ro.vendor.wifi.sap.interface=ap0
