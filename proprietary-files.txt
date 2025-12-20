@@ -952,6 +952,13 @@ vendor/lib64/hw/vendor.lge.hardware.vss_ims@1.0-impl.so
 vendor/lib64/libvssims-impl-mtk.so
 vendor/lib64/vendor.lge.hardware.vss_ims@1.0.so
 
+# Resolution control
+vendor/bin/hw/vendor.lge.hardware.powerhint.rescontrol@2.0-service
+vendor/etc/init/vendor.lge.hardware.powerhint.rescontrol@2.0-service.rc
+vendor/lib64/libvendor_rescontrol.so
+vendor/lib64/vendor.lge.hardware.powerhint.rescontrol@2.0-common.so
+vendor/lib64/vendor.lge.hardware.powerhint.rescontrol@2.0.so
+
 # Secure element
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
 vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
