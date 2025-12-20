@@ -37,6 +37,7 @@ TARGET_BOOTLOADER_BOARD_NAME := mcaymanlm
 TARGET_NO_BOOTLOADER := true
 
 # HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibility_matrix.xml
 
 # Kernel
