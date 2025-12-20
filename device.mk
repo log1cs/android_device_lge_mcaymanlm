@@ -49,6 +49,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     wpa_supplicant \
     hostapd \
+    libwifi-hal-wrapper \
     android.hardware.wifi-service
 
 # Get non-open-source specific aspects
