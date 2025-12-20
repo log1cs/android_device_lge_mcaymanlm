@@ -304,46 +304,6 @@
         <fqname>@1.0::ITransport/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.lge.hardware.accessory</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IAccessory</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::IAccessory/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.accessory.uevent</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>IAccessoryUevent</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.2::IAccessoryUevent/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.battery</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IBattery</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IBattery/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.bootproperty</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IBootProperty</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IBootProperty/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.lge.hardware.cameraex</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -364,106 +324,6 @@
         <fqname>@1.1::ICharger/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.lge.hardware.coverdisplay</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ICoverDisplay</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ICoverDisplay/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.display.brightness</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>IDisplayBrightness</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.2::IDisplayBrightness/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.display.general</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDisplayGeneral</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IDisplayGeneral/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.display.tune</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>IDisplayTune</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.2::IDisplayTune/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.display.uevent</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDisplayUevent</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IDisplayUevent/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.dualscreen</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IDualScreen</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::IDualScreen/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.ftmitem</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IFtmitem</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IFtmitem/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.gnss</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ILgeGnss</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ILgeGnss/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.laop</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ILgeLaop</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ILgeLaop/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.lgatcmd</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ILgAtCmd</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ILgAtCmd/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.lge.hardware.lgdata</name>
         <transport>hwbinder</transport>
         <version>1.1</version>
@@ -479,56 +339,6 @@
         <fqname>@1.1::ILgDataVendorRil/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.lge.hardware.light</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>ILightEx</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::ILightEx/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.lpwg</name>
-        <transport>hwbinder</transport>
-        <version>1.4</version>
-        <interface>
-            <name>ILpwg</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.4::ILpwg/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.msp</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IMsp</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IMsp/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.platform</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>IPlatform</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.2::IPlatform/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.powercontrol</name>
-        <transport>hwbinder</transport>
-        <version>1.3</version>
-        <interface>
-            <name>IPowercontrol</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.3::IPowercontrol/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.lge.hardware.powerhint.rescontrol</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
@@ -537,16 +347,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.0::IResControl/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.property</name>
-        <transport>hwbinder</transport>
-        <version>2.2</version>
-        <interface>
-            <name>IProperty</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.2::IProperty/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.lge.hardware.radio</name>
@@ -561,66 +361,6 @@
         <fqname>@2.0::ILgeRadio/radio1_wifi</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.lge.hardware.sdcardtray</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISDCardTray</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISDCardTray/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.storageinfo</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IStorageInfo</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::IStorageInfo/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.thermal</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>IThermal</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.2::IThermal/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.touch</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>ITouch</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.2::ITouch/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.usb</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ILgeUsb</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ILgeUsb/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.usb.uevent</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IUsbUEvent</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IUsbUEvent/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.lge.hardware.vss_ims</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -629,36 +369,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IVssIms/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.wifi.hal</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IWifiLgeHal</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::IWifiLgeHal/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.wifi.hostapd</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.wifi.hostapd</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lge.hardware.wifi.hostapd</name>
-        <transport>hwbinder</transport>
-        <version>3.0</version>
-        <interface>
-            <name>IHostapdEx</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@3.0::IHostapdEx/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.aee</name>
