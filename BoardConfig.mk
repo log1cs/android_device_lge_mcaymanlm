@@ -36,6 +36,9 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 TARGET_BOOTLOADER_BOARD_NAME := mcaymanlm
 TARGET_NO_BOOTLOADER := true
 
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibility_matrix.xml
+
 # Kernel
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_CMDLINE := androidboot.init_fatal_reboot_target=recovery bootopt=64S3,32N2,64N2 androidboot.selinux=permissive printk.devkmsg=on
