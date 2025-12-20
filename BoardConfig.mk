@@ -38,7 +38,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x40078000
-BOARD_KERNEL_CMDLINE := androidboot.init_fatal_reboot_target=recovery bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := androidboot.init_fatal_reboot_target=recovery bootopt=64S3,32N2,64N2 androidboot.selinux=permissive printk.devkmsg=on
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_PAGESIZE := 2048
