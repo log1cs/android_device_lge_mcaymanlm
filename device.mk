@@ -45,5 +45,11 @@ PRODUCT_PACKAGES += \
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    wpa_supplicant \
+    hostapd \
+    android.hardware.wifi-service
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/lge/mcaymanlm/mcaymanlm-vendor.mk)
