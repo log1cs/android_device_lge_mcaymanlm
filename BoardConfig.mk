@@ -100,6 +100,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
+TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 
 # SEPolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
