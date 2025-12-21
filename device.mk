@@ -51,6 +51,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.example \
     android.hardware.health-service.example_recovery
 
+# Init scripts
+PRODUCT_PACKAGES += \
+    init.recovery.mt6885.rc
+
 # Media
 PRODUCT_PACKAGES += \
     libstagefright_softomx_plugin.vendor
