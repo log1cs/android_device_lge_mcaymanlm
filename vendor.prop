@@ -2,6 +2,7 @@
 persist.vendor.lge.audio.aux_attn=6
 
 # Bluetooth
+bluetooth.device.class_of_device=90,2,12
 bluetooth.device.default_name=VELVET
 persist.bluetooth.a2dp_offload.cap=sbc-aac
 persist.bluetooth.a2dp_offload.disabled=true
