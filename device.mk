@@ -75,6 +75,9 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
+# Properties
+include $(LOCAL_PATH)/vendor_logtag.mk
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
