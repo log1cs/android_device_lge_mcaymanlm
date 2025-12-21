@@ -42,6 +42,11 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.example \
+    android.hardware.health-service.example_recovery
+
 # Media
 PRODUCT_PACKAGES += \
     libstagefright_softomx_plugin.vendor
