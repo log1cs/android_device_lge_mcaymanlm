@@ -76,6 +76,10 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2460
 TARGET_SCREEN_WIDTH := 1080
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey
+
 # FM Radio
 PRODUCT_PACKAGES += \
     FMRadio
