@@ -26,6 +26,26 @@ vendor.bluetooth.ldac.abr=true
 
 # Camera
 ro.vendor.lge.aux.camera=1
+camera.disable_zsl_mode=1
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.imgo=8
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.imgo=6
+persist.vendor.camera3.pipeline.bufnum.base.imgo=5
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.rrzo=8
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.rrzo=6
+persist.vendor.camera3.pipeline.bufnum.base.rrzo=5
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.lcso=8
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.lcso=6
+persist.vendor.camera3.pipeline.bufnum.base.lcso=5
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.rsso=8
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=6
+persist.vendor.camera3.pipeline.bufnum.base.rsso=5
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=8
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=6
+ro.vendor.camera.isp.support.colorspace=0
+ro.vendor.camera3.zsl.default=140
+ro.vendor.mtk_camera_app_version=0
+vendor.camera.mdp.dre.enable=1
+vendor.camera.mdp.cz.enable=1
 
 # Connsys
 persist.vendor.connsys.chipid=-1
