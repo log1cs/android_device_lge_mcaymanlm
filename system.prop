@@ -3,3 +3,6 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Zygote
 zygote.critical_window.minute=10
+
+# Voice assistant
+ro.opa.device_model_id=time-deviceaction-time-aswlba
