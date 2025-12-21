@@ -53,6 +53,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl:32
 
 PRODUCT_PACKAGES += \
+    MtkInCallService
+
+PRODUCT_PACKAGES += \
     libbundlewrapper:32 \
     libreverbwrapper:32 \
     libvisualizer:32 \
