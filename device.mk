@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Bootanimation
+TARGET_SCREEN_HEIGHT := 2460
+TARGET_SCREEN_WIDTH := 1080
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.example \
