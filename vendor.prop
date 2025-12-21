@@ -3,6 +3,12 @@ persist.vendor.lge.audio.aux_attn=6
 
 # Bluetooth
 bluetooth.device.default_name=VELVET
+persist.bluetooth.a2dp_offload.cap=sbc-aac
+persist.bluetooth.a2dp_offload.disabled=true
+ro.bluetooth.a2dp_offload.supported=true
+ro.vendor.bt.platform=6885
+ro.vendor.mtk.bt_sap_enable=true
+vendor.bluetooth.ldac.abr=true
 
 # Camera
 ro.vendor.lge.aux.camera=1
