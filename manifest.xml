@@ -285,16 +285,6 @@
         <fqname>@1.1::IUsbGadget/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.insidesecure.vpnclientd</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITransport</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITransport/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.lge.hardware.cameraex</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
