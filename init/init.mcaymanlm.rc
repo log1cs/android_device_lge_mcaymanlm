@@ -1,0 +1,30 @@
+# This file will be installed as /init.{ro.hardware}.rc
+import /vendor/etc/init/hw/init.mt6885.rc
+
+# to override init.mt6885.rc and init.project.rc
+import /vendor/etc/init/hw/init.lge.audio.rc
+import /vendor/etc/init/hw/init.lge.usb.rc
+import /vendor/etc/init/hw/init.lge.usb.configfs.rc
+import /vendor/etc/init/hw/init.lge.display.rc
+import /vendor/etc/init/hw/init.lge.sensors.rc
+import /vendor/etc/init/hw/init.lge.fingerprints.rc
+
+# import rc file for chipset[mt6885] common
+import /vendor/etc/init/hw/init.mt6885_core.rc
+
+# This file will be installed as /init.{ro.hardware}.vendor.rc
+import /vendor/etc/init/hw/init.${ro.hardware}.vendor.rc
+
+on post-fs-data
+    # NFC: create data/nfc for nv storage
+    mkdir /data/vendor/nfc 0770 nfc nfc
+
+#[START][SEC_USA][RSU] Start tsdemon
+service tsdaemon /vendor/bin/tsdaemon
+    class main
+    user system
+    group system net_admin net_raw
+    disabled
+
+on property:ro.vendor.lge.build.target_operator=TMO
+    enable tsdaemon
