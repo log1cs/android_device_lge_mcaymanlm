@@ -62,6 +62,10 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Platform
 TARGET_BOARD_PLATFORM := mt6885
 
+# Recovery
+BOARD_USES_RECOVERY_AS_BOOT := true
+TARGET_NO_RECOVERY := true
+
 # SEPolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
