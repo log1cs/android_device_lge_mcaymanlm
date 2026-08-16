@@ -25,6 +25,10 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+PRODUCT_PACKAGES += \
+    create_pl_dev \
+    create_pl_dev.recovery
+
 # Boot
 PRODUCT_PACKAGES += \
     android.hardware.boot-service.mediatek \
