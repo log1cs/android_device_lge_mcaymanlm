@@ -65,6 +65,7 @@ TARGET_BOARD_PLATFORM := mt6885
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 
 # SEPolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
