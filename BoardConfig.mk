@@ -5,6 +5,19 @@
 
 DEVICE_PATH := device/lge/mcaymanlm
 
+# A/B
+AB_OTA_PARTITIONS := \
+    boot \
+    dtbo \
+    odm \
+    system \
+    system_ext \
+    product \
+    vendor \
+    vbmeta \
+    vbmeta_system \
+    vbmeta_vendor
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -26,6 +39,25 @@ TARGET_NO_BOOTLOADER := true
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_mcaymanlm_defconfig
+
+# Partitions
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608
+BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_LGE_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext vendor
+BOARD_LGE_DYNAMIC_PARTITIONS_SIZE := 7595884544
+BOARD_SUPER_PARTITION_GROUPS := lge_dynamic_partitions
+BOARD_SUPER_PARTITION_SIZE := 15200157696
+BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
+TARGET_COPY_OUT_ODM := odm
+TARGET_COPY_OUT_PRODUCT := product
+TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+TARGET_COPY_OUT_VENDOR := vendor
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6885
