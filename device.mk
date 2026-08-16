@@ -31,7 +31,8 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/mediatek
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/lge/mcaymanlm/mcaymanlm-vendor.mk)
