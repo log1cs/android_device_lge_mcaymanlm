@@ -45,6 +45,17 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.mcaymanlm \
+    fstab.mcaymanlm.ramdisk \
+    init.connectivity.rc \
+    init.lge.rc \
+    init.mcaymanlm.rc \
+    init.mt6885.rc \
+    init.project.rc \
+    ueventd.mt6885.rc
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
