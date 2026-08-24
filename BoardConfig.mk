@@ -62,7 +62,15 @@ BOARD_KERNEL_CMDLINE += androidboot.hardware=mcaymanlm
 BOARD_KERNEL_CMDLINE += androidboot.serialconsole=0
 
 # Kernel
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
+TARGET_KERNEL_SOURCE := kernel/lge/mt6885
 TARGET_KERNEL_CONFIG := lineageos_mcaymanlm_defconfig
+TARGET_KERNEL_NO_GCC := true
+TARGET_KERNEL_CLANG_VERSION := r416183b
+TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
+BOARD_KERNEL_SEPARATED_DTBO := true
+BOARD_KERNEL_IMAGE_NAME := Image.gz
 
 # Partitions
 -include vendor/lineage/config/BoardConfigReservedSize.mk
