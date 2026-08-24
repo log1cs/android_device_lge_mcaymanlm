@@ -43,6 +43,11 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.mt6885 \
+    fstab.mt6885.ramdisk
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
