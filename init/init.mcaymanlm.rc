@@ -1,0 +1,21 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+import /vendor/etc/init/hw/init.mt6885.rc
+import /vendor/etc/init/hw/init.lge.rc
+import /vendor/etc/init/hw/init.lge.sensors.rc
+
+on post-fs-data
+    mkdir /data/vendor/nfc 0770 nfc nfc
+
+    # Sensor
+    mkdir /data/vendor/sensor 0774 system system
+    chmod 0660 /dev/hf_manager
+    chown system system /dev/hf_manager
+
+service tsdaemon /vendor/bin/tsdaemon
+    class main
+    user system
+    group system net_admin net_raw
