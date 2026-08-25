@@ -114,7 +114,8 @@ include hardware/mediatek/configs/properties/vendor_logtag.mk
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.mt6885 \
-    fstab.mt6885.ramdisk
+    fstab.mt6885.ramdisk \
+    ueventd.mt6768.rc
 
 # Sensors
 PRODUCT_COPY_FILES += \
