@@ -14,7 +14,7 @@ product                                                /product                e
 /dev/block/by-name/dtbo                                /dtbo                   emmc            defaults                                                                  defaults,slotselect
 
 /dev/block/platform/bootdevice/by-name/md_udc          /metadata               ext4            noatime,nosuid,nodev,discard                                              wait,formattable,first_stage_mount
-/dev/block/platform/bootdevice/by-name/userdata        /data                   f2fs            noatime,nosuid,nodev,discard,fsync_mode=nobarrier,reserve_root=32768,resgid=1065,inlinecrypt latemount,wait,check,formattable,quota,resize,reservedsize=128M,fileencryption=aes-256-xts:aes-256-cts,checkpoint=fs
+/dev/block/platform/bootdevice/by-name/userdata        /data                   f2fs            noatime,nosuid,nodev,discard,fsync_mode=nobarrier,reserve_root=32768,resgid=1065,inlinecrypt latemount,wait,check,formattable,quota,reservedsize=128M,fileencryption=aes-256-xts:aes-256-cts,checkpoint=fs
 
 /dev/block/platform/bootdevice/by-name/nvcfg           /mnt/vendor/nvcfg       ext4            noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc                  wait,check,formattable
 /dev/block/platform/bootdevice/by-name/nvdata          /mnt/vendor/nvdata      ext4            noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc                  wait,check,formattable
