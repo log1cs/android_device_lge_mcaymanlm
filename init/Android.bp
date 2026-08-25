@@ -9,3 +9,10 @@ prebuilt_etc {
     vendor: true,
     ramdisk_available: true,
 }
+
+prebuilt_etc {
+    name: "ueventd.mt6885.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.mt6885.rc",
+    vendor: true,
+}
