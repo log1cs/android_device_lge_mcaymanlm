@@ -108,6 +108,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
+# Overlay
+$(call inherit-product, hardware/mediatek/overlay/mssi.mk)
+
 # Properties
 include hardware/mediatek/configs/properties/vendor_logtag.mk
 
