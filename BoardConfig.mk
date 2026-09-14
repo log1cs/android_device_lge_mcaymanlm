@@ -106,6 +106,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_F2FS := true
 
 # SEPolicy
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 # Verified Boot
