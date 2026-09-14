@@ -134,6 +134,10 @@ PRODUCT_COPY_FILES += \
 # Overlay
 $(call inherit-product, hardware/mediatek/overlay/mssi.mk)
 
+# PowerOffAlarm
+PRODUCT_PACKAGES += \
+    PowerOffAlarm
+
 # Properties
 include hardware/mediatek/configs/properties/vendor_logtag.mk
 
