@@ -1,0 +1,18 @@
+<compatibility-matrix version="2.0" type="framework">
+    <hal format="hidl" optional="true">
+        <name>vendor.lge.hardware.accessory</name>
+        <version>1.1</version>
+        <interface>
+            <name>IAccessory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.lge.hardware.cameraex</name>
+        <version>1.0</version>
+        <interface>
+            <name>ICameraEx</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>
