@@ -94,6 +94,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     chipinfo
 
+# DRM
+PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
+    $(LOCAL_PATH)/configs/linker.config.json
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
