@@ -166,6 +166,8 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, hardware/mediatek/overlay/mssi.mk)
 
 PRODUCT_PACKAGES += \
+    FrameworksResOverlayMcaymanlm \
+    SettingsOverlayMcaymanlm \
     SystemUIOverlayMcaymanlm
 
 # Power
