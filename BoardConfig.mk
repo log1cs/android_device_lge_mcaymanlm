@@ -114,6 +114,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
+# Vendor security patch level
+VENDOR_SECURITY_PATCH := 2022-03-05
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
