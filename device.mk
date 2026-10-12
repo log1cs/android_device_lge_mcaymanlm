@@ -110,6 +110,12 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint-service.lge \
+    sensors.lge
+
+$(call inherit-product, hardware/lge/configs/udfps.mk)
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
@@ -156,6 +162,9 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 $(call inherit-product, hardware/mediatek/overlay/mssi.mk)
+
+PRODUCT_PACKAGES += \
+    SystemUIOverlayMcaymanlm
 
 # Power
 PRODUCT_PACKAGES += \

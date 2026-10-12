@@ -114,6 +114,11 @@ ro.vendor.widevine_wrapped_keybox_path=/mnt/vendor/persist-lg/widevine/
 # Factory Reset Protection
 ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
 
+# Fingerprint
+persist.vendor.fingerprint.type=udfps_optical
+persist.vendor.fingerprint.sensor_location=540|2187|91
+persist.vendor.fingerprint.has_touch_reset_ctrl=true
+
 # FM Radio
 persist.vendor.connsys.fm_chipid=mt6635
 ro.vendor.builtin_fm_antenna_support=1
