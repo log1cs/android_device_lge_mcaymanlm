@@ -153,6 +153,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.km41.xml
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay-service.lge
+
+$(call soong_config_set,livedisplay_lge,enable_se,true)
+$(call soong_config_set,livedisplay_lge,enable_ce,true)
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
