@@ -181,6 +181,7 @@ PRODUCT_PACKAGES += \
     ApertureOverlayMcaymanlm \
     FrameworksResOverlayMcaymanlm \
     SettingsOverlayMcaymanlm \
+    SettingsProviderOverlayMcaymanlm \
     SystemUIOverlayMcaymanlm
 
 # Power
