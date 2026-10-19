@@ -46,6 +46,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.recovery.mt6885.rc",
+    src: "init.recovery.mt6885.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "ueventd.mt6885.rc",
     filename: "ueventd.rc",
     src: "ueventd.mt6885.rc",
