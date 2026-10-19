@@ -182,6 +182,7 @@ $(call inherit-product, hardware/mediatek/overlay/mssi.mk)
 PRODUCT_PACKAGES += \
     ApertureOverlayMcaymanlm \
     FrameworksResOverlayMcaymanlm \
+    NcmTetheringOverlay \
     SettingsOverlayMcaymanlm \
     SettingsProviderOverlayMcaymanlm \
     SystemUIOverlayMcaymanlm
