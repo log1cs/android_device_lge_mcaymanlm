@@ -148,6 +148,9 @@ PRODUCT_PACKAGES += \
 # ION
 $(call soong_config_set_bool,libion,legacy_impl,true)
 
+# Kernel
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.km41.xml
