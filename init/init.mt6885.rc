@@ -11,8 +11,6 @@ on early-init
     # boot perf. tune
     write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "5 0 0 0"
     write /sys/devices/platform/boot_dramboost/dramboost/dramboost 1
-    mount debugfs debugfs /sys/kernel/debug
-    chmod 0755 /sys/kernel/debug
 
     # Modem
     write /sys/class/net/ccmni0/queues/rx-0/rps_cpus "0D"
