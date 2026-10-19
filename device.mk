@@ -210,6 +210,7 @@ PRODUCT_PACKAGES += \
     init.mcaymanlm.rc \
     init.mt6885.rc \
     init.project.rc \
+    init.recovery.mt6885.rc \
     ueventd.mt6885.rc
 
 # Recovery
